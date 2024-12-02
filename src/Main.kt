@@ -2015,4 +2015,6 @@ fun main() {
     val output = day1.sumValue(diff)
     println(output)
 
+    val output2 = day1.findNumberOfMatches(listOne, listTwo)
+    println(output2)
 }

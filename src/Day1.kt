@@ -17,4 +17,16 @@ class Day1 {
         return kotlin.math.abs(a - b)
     }
 
+    fun findNumberOfMatches(listOne: List<Int>, listTwo: List<Int>) : Int {
+
+        val numberToSum = mutableListOf<Int>()
+        listOne.forEach { item ->
+            val test = listTwo.filter { it == item }
+            val output = item * test.count()
+            numberToSum.add(output)
+        }
+
+        return numberToSum.sum()
+    }
+
 }
