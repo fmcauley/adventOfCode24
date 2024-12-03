@@ -1,3 +1,4 @@
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
@@ -2008,13 +2009,6 @@ fun main() {
         46878
     )
 
-    val day1 = Day1()
-    val sortedOne = day1.sortedValue(listOne)
-    val sortedTwo = day1.sortedValue(listTwo)
-    val diff = day1.combine(sortedOne, sortedTwo)
-    val output = day1.sumValue(diff)
-    println(output)
-
-    val output2 = day1.findNumberOfMatches(listOne, listTwo)
-    println(output2)
+    val output = Day2().readInFile("src/report.txt")
+    println("The output is -> $output")
 }
