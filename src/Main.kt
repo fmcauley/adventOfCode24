@@ -2009,6 +2009,6 @@ fun main() {
         46878
     )
 
-    val output = Day2().readInFile("src/report.txt")
+    val output = Day3().readInFile("src/report3.txt")
     println("The output is -> $output")
 }
